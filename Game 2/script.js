@@ -9,7 +9,7 @@ const  goodGuyImg = new Image();
 goodGuyImg.src = 'student.png';
 const badGuyImg = new Image();
 badGuyImg.src = 'fail.png';
-let LevelChanged = false, GameOver = false;;
+let LevelChanged = false, GameOver = false;
 
 const rand = function(num) {
   return Math.floor(Math.random() * num) + 1;
@@ -89,7 +89,7 @@ const gameData = {
 //level up
 setTimeout(function(){
 	levelUp();
-},5000);
+},7000);
 const levelUp = function(){
 	if(!GameOver){
 		alert("You reached level " + ++(gameData.level));
